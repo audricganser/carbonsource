@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/climatepatch/carbonsource.svg?branch=master)](https://travis-ci.org/climatepatch/carbonsource)
 #CarbonSource v0.0.2
 
 CarbonSource is a website designed to help people better understand the politicians they vote for. We achieve this by allowing users to easily search through politicians, and view summaries of their views on various topics.

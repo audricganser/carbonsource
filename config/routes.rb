@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
+
+  get '/'
+
   get 'search/new'
+
+  post 'search/new'
 
   get 'search/show'
 
