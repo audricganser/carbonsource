@@ -1,6 +1,7 @@
 class SearchController < ApplicationController
 
   def index
+    redirect '/search/new'
   end
 
   def new
