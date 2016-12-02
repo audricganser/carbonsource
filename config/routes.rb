@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   get 'search/new' => "search#new"
 
-  post 'search/new'
+  post 'search/create'
 
   get 'search/show' => "search#show"
 
