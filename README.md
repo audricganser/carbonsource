@@ -53,7 +53,7 @@ Big Political figures:
 * State Legislature
 
 
-## Types of INformation
+## Types of Information
 
 * Voting Record
 * Policies
@@ -62,27 +62,17 @@ Big Political figures:
 
 
 ##Key features:
-1.Website:
-
- 	 Robust, relational database for storing numerous entries on various topics.
-
-	 Simple but powerful user search function.
-
-	 Visual content delivery.
-
-	 Text content delivery.
-
-	Comparing multiple politicians.
-
+1. Website:
+   * Robust, relational database for storing numerous entries on various topics.
+   * Simple but powerful user search function.
+   * Visual content delivery.
+   * Text content delivery.
+   * Comparing multiple politicians.
 2. Scraper/ parser + database accessor:
-
-	 Easy functional way to quickly retrieve database items.
-
-	 Scraper that parses articles and documents, and outputs the format nicely to
-
-	 Manual input initially- develop automatic crawler
-
-	 Database accessor that stores sets of entries into the production database
+   * Easy functional way to quickly retrieve database items.
+   * Scraper that parses articles and documents, and outputs the format nicely to
+   * Manual input initially- develop automatic crawler
+   * Database accessor that stores sets of entries into the production database
 
 
 ## General user stories:
