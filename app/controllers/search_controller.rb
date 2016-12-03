@@ -8,6 +8,9 @@ class SearchController < ApplicationController
     @search = Search.new
   end
 
+  def create
+  end
+
   def show
   end
 

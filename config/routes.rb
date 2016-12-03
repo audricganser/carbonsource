@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'search/create'
+
   get '/' => "search#index"
 
   get 'search/new' => "search#new"
