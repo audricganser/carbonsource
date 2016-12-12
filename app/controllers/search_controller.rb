@@ -1,10 +1,14 @@
 class SearchController < ApplicationController
 
   def index
-    redirect '/search/new'
+    redirect_to '/search/new'
   end
 
   def new
+    @search = Search.new
+  end
+
+  def create
   end
 
   def show

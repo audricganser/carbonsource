@@ -1,2 +1,4 @@
-<h1>Search#new</h1>
-<p>Find me in app/views/search/new.html.erb</p>
+<%= form_for @search, url: {controller: "search", action: "create"}, html: {id: "search-form"} do |f| %>
+  <%= f.text_field :query, placeholder: "Enter politician here" %>
+  <%= f.submit "Carbon search" %>
+<% end %>
