@@ -1,16 +1,12 @@
 Rails.application.routes.draw do
 
-  get 'search/create'
+  get '/' => "search#new"
 
-  get '/' => "search#index"
+  post 'search/create' => "search#create"
 
-  get 'search/new' => "search#new"
+  get '/:id' => "search#show"
 
-  post 'search/create'
-
-  get 'search/show' => "search#show"
-
-  get 'search/list' => "search#list"
+  get '/list' => "search#list"
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
