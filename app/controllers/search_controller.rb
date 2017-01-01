@@ -1,9 +1,5 @@
 class SearchController < ApplicationController
 
-  def index
-    redirect_to '/search/new'
-  end
-
   def new
     @search = Search.new
   end

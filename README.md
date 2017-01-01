@@ -23,13 +23,23 @@ Find out more about our organisation [here](http://climatepatch.org).
 ###Prerequisites to run:
 - RVM
 - Ruby v2.3.1
-- Bundler gem
 To run the current dev build of the website, clone this repo to your machine, and run the following in your command line, while in the project's root directory:
-`bundle install` to install dependencies
+- `gem install bundler` installs the bundler rubygem
+- `bundle install` installs dependencies listed in the gemfile
 
-Then in postgres, create a database named `carbonsource_development`.
+###DB setup:
+- `psql -u postgres` (enters the postgres REPL as root)
+- `CREATE ROLE (ENTER_USERNAME_HERE) LOGIN password (YOUR_NEW_PASSWORD);` creates a new postgres user.
 
-Run `rake db:migrate` To run migrations
+NOTE: the above commands only need to be run once per machine.
+
+- `psql -u (Same username as above)` Enters the REPL as the newly created user.
+- `CREATE DATABASE carbonsource_development ENCODING 'UTF8' OWNER '(Your username as above)'`
+- Leave the prompt with '\q'
+
+All done!
+
+Run `rake db:migrate` To run migrations and update the database with the current schema
 
 Finally run `bin/rails server` or simply `rails s` to start up the server.
 

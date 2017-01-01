@@ -4,7 +4,7 @@ feature 'User visits new search page' do
 
   scenario 'they see the form on the page' do
 
-    visit '/search/new'
+    visit '/'
     expect(page).to have_selector("input[type='text']")
 
   end
