@@ -2,16 +2,23 @@ require 'rails_helper'
 
 RSpec.describe SearchController, type: :controller do
 
-  describe "GET #new" do
+  describe "GET #index" do
     it "returns http success" do
-      get :new
+      get "new"
       expect(response).to have_http_status(:success)
     end
   end
 
   describe "GET #show" do
     it "returns http success" do
-      get :show
+      get :show, :id => :id
+      expect(response).to have_http_status(:success)
+    end
+  end
+
+  describe "POST #create" do
+    it "returns http success" do
+      post :create
       expect(response).to have_http_status(:success)
     end
   end
