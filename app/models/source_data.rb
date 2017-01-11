@@ -1,0 +1,2 @@
+class SourceData < ApplicationRecord
+end
