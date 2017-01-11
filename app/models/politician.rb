@@ -1,2 +1,0 @@
-class Politician < ApplicationRecord
-end
