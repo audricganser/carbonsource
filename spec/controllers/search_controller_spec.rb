@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'date'
 
 RSpec.describe SearchController, type: :controller do
 
@@ -18,8 +19,8 @@ RSpec.describe SearchController, type: :controller do
 
   describe "POST #create" do
     it "returns http success" do
-      post :create
-      expect(response).to have_http_status(:success)
+      post :create, {search: {query: "bob"}}
+      expect(response).to have_http_status(302)
     end
   end
 
