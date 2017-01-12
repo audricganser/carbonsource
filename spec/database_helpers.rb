@@ -33,7 +33,7 @@ end
 
 def setup_organisations
   @org = Organisation.new
-  @org.type = "inc"
+  @org.type = "company"
   @org.name = "banana"
   @org.info_contact_id = 1
 end
@@ -51,6 +51,12 @@ def setup_info_contacts
   @info.region3 = "New York County"
   @info.state = "New York"
   @info.country = "United States of America"
+
+  @info2 = InfoContact.new
+  @info2.email = "contact@company.org"
+  @info2.address = "123 Somewhere Street"
+  @info2.phone = "12345-678-910"
+  @info2.website = "http://example.org"
 end
 
 def setup_carbon_emissions
