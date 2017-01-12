@@ -51,6 +51,7 @@ ActiveRecord::Schema.define(version: 20170112151943) do
 
   create_table "politicians", force: :cascade do |t|
     t.string  "position"
+    t.string  "party"
     t.string  "name_first"
     t.string  "name_last"
     t.integer "info_contact_id"

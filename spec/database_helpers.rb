@@ -10,7 +10,8 @@ end
 def setup_politicians
   @politician = Politician.new
   @politician.name_first = "Tim"
-  @politician.name_last = "withers"
+  @politician.name_last = "Withers"
+  @politician.party = "republican"
   @politician.position = "senator"
   @politician.info_contact_id = 0
   @politician.save
