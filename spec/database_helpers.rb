@@ -63,5 +63,5 @@ end
 def setup_contributions
   @contr = Contribution.new
   @contr.amount = 123456
-  @contr.datetime = "2017-01-12T14:49:35+00:00"
+  @contr.created_at = "2017-01-12T14:49:35+00:00"
 end
