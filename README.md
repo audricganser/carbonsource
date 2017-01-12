@@ -28,14 +28,8 @@ To run the current dev build of the website, clone this repo to your machine, an
 - `bundle install` installs dependencies listed in the gemfile
 
 ###DB setup:
-- `psql -u postgres` (enters the postgres REPL as root)
-- `CREATE ROLE (ENTER_USERNAME_HERE) LOGIN password (YOUR_NEW_PASSWORD);` creates a new postgres user.
-
-NOTE: the above commands only need to be run once per machine.
-
-- `psql -u (Same username as above)` Enters the REPL as the newly created user.
-- `CREATE DATABASE carbonsource_development ENCODING 'UTF8' OWNER '(Your username as above)'`
-- Leave the prompt with '\q'
+- Set up postgres on your machine. [Here](https://www.tunnelsup.com/setting-up-postgres-on-mac-osx/) is a guide for osx. Linux and it's flavours are a bit different, the instructions can be found online easily.
+- `rake db:create:all` creates a database for all env's.
 
 All done!
 
