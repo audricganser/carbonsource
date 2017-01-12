@@ -1,6 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe Politician, type: :model do
+  #TODO: Write tests like these for the whole database model, including relations (MC)
+
   before :each do
     setup_all_databases
   end

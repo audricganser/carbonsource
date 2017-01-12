@@ -16,13 +16,13 @@ ActiveRecord::Schema.define(version: 20170112151943) do
   enable_extension "plpgsql"
 
   create_table "carbon_emissions", force: :cascade do |t|
-    t.string "measurement_date"
-    t.string "amount"
-    t.string "url"
+    t.datetime "measurement_date"
+    t.integer  "amount"
+    t.string   "url"
   end
 
   create_table "contributions", force: :cascade do |t|
-    t.string   "amount"
+    t.integer  "amount"
     t.datetime "created_at"
     t.integer  "organisation_id"
     t.index ["organisation_id"], name: "index_contributions_on_organisation_id", using: :btree
