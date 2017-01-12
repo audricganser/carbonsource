@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170111145220) do
+ActiveRecord::Schema.define(version: 20170112151943) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,11 +18,14 @@ ActiveRecord::Schema.define(version: 20170111145220) do
   create_table "carbon_emissions", force: :cascade do |t|
     t.string "measurement_date"
     t.string "amount"
+    t.string "url"
   end
 
   create_table "contributions", force: :cascade do |t|
     t.string   "amount"
     t.datetime "created_at"
+    t.integer  "organisation_id"
+    t.index ["organisation_id"], name: "index_contributions_on_organisation_id", using: :btree
   end
 
   create_table "info_contacts", force: :cascade do |t|
@@ -50,21 +53,13 @@ ActiveRecord::Schema.define(version: 20170111145220) do
     t.string  "position"
     t.string  "name_first"
     t.string  "name_last"
-    t.integer "contact_id"
-    t.index ["contact_id"], name: "index_politicians_on_contact_id", using: :btree
+    t.integer "info_contact_id"
+    t.index ["info_contact_id"], name: "index_politicians_on_info_contact_id", using: :btree
   end
 
   create_table "searches", force: :cascade do |t|
-    t.string "query"
-    t.string "date"
-  end
-
-  create_table "source_data", force: :cascade do |t|
-    t.string  "data"
-    t.integer "source_id"
-    t.integer "politician_id"
-    t.index ["politician_id"], name: "index_source_data_on_politician_id", using: :btree
-    t.index ["source_id"], name: "index_source_data_on_source_id", using: :btree
+    t.string   "query"
+    t.datetime "date"
   end
 
   create_table "sources", force: :cascade do |t|
@@ -72,8 +67,8 @@ ActiveRecord::Schema.define(version: 20170111145220) do
     t.string  "description"
     t.string  "url"
     t.string  "remark"
-    t.integer "organisation_id"
-    t.index ["organisation_id"], name: "index_sources_on_organisation_id", using: :btree
+    t.integer "politician_id"
+    t.index ["politician_id"], name: "index_sources_on_politician_id", using: :btree
   end
 
 end
