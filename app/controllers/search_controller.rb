@@ -8,7 +8,6 @@ class SearchController < ApplicationController
   end
 
   def create
-    p params
     @search = Search.new
     @search.query = params['search']['query']
     # TODO: implement search algorithm here, to process the query into a unique politician ID to pass through.

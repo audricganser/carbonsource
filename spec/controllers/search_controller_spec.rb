@@ -12,14 +12,14 @@ RSpec.describe SearchController, type: :controller do
 
   describe "GET #show" do
     it "returns http success" do
-      get :show, :id => :id
+      get :show, params: {id: 0}
       expect(response).to have_http_status(:success)
     end
   end
 
   describe "POST #create" do
     it "returns http success" do
-      post :create, {search: {query: "bob"}}
+      post :create, params: {search: {query: "bob"}}
       expect(response).to have_http_status(302)
     end
   end
