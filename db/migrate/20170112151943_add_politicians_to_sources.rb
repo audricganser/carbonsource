@@ -1,6 +1,6 @@
-class AddPoliticiansToSources < ActiveRecord::Migration[5.0]
+class AddPoliticiansToContributions < ActiveRecord::Migration[5.0]
   def change
-    add_column :sources, :politician_id, :integer
-    add_index :sources, :politician_id
+    add_column :contributions, :politician_id, :integer
+    add_index :contributions, :politician_id
   end
 end

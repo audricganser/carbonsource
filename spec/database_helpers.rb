@@ -43,7 +43,7 @@ def setup_info_contacts
   @info.email = "tim@usa.gov"
   @info.address = "Floor 3, 3 Washington Avenue"
   @info.phone = "12345-678-910"
-  @info.website = "timwithers.gov"
+  @info.website = "http://example.org"
   @info.postal_code = "10001"
   @info.city = "New York City"
   @info.region1 = "1"
@@ -57,6 +57,13 @@ def setup_info_contacts
   @info2.address = "123 Somewhere Street"
   @info2.phone = "12345-678-910"
   @info2.website = "http://example.org"
+  @info.postal_code = "10001"
+  @info.city = "New York City"
+  @info.region1 = "1"
+  @info.region2 = "New York City"
+  @info.region3 = "New York County"
+  @info.state = "New York"
+  @info.country = "United States of America"
 end
 
 def setup_carbon_emissions
