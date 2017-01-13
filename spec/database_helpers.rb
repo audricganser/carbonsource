@@ -2,7 +2,6 @@ def setup_all_databases
   setup_politicians
   setup_organisations
   setup_searches
-  setup_sources
   setup_info_contacts
   setup_carbon_emissions
   setup_contributions
@@ -23,12 +22,6 @@ def setup_searches
   @search.query = "tim"
   @search.date = "2017-01-12T14:49:35+00:00"
   @search.save
-end
-
-def setup_sources
-  @source_one = Source.new
-  @source_one.name = "example_source_one"
-  @source_one.description = ""
 end
 
 def setup_organisations
