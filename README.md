@@ -4,7 +4,7 @@
 CarbonSource is a website designed to help people better understand the politicians they vote for. We achieve this by allowing users to easily search through politicians, and view summaries of their views on various topics.
 
 ##About ClimatePatch
-Find out more about our organisation [here](http://climatepatch.org).
+Find out more about our organisation [here](https://climatepatch.org).
 
 ##Project goals:
 - Allow users to easily search through a large number of politicians to select the one they wish to view.
