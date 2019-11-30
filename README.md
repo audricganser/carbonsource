@@ -1,12 +1,12 @@
 [![Build Status](https://travis-ci.org/climatepatch/carbonsource.svg?branch=master)](https://travis-ci.org/climatepatch/carbonsource)
-#CarbonSource v0.0.2
+# CarbonSource v0.0.2
 
 CarbonSource is a website designed to help people better understand the politicians they vote for. We achieve this by allowing users to easily search through politicians, and view summaries of their views on various topics.
 
-##About ClimatePatch
+## About ClimatePatch
 Find out more about our organisation [here](http://climatepatch.org).
 
-##Project goals:
+## Project goals:
 - Allow users to easily search through a large number of politicians to select the one they wish to view.
 - Accumulate a wide variety of data from a number of sources.
 - Cover a broad range of environmental topics.
@@ -14,20 +14,20 @@ Find out more about our organisation [here](http://climatepatch.org).
 - Present a single score number per politician, but also more detailed results. Back up all claims with the source.
 - Deliver content in a visual manner, utilizing graphs or charts to help depict politicians views
 
-##Important Links  
+## Important Links  
 1. [Trello Board](https://trello.com/b/iV377Jzq/carbon-source)
 2. [Spec Sheet (RFC)](https://docs.google.com/document/d/18kNvxdlU6cM6G76LYWRXyilrtB2Zra2A3IAHJPfpi-c/edit)
 
-##Important information:
+## Important information:
 
-###Prerequisites to run:
+### Prerequisites to run:
 - RVM
 - Ruby v2.3.1
 To run the current dev build of the website, clone this repo to your machine, and run the following in your command line, while in the project's root directory:
 - `gem install bundler` installs the bundler rubygem
 - `bundle install` installs dependencies listed in the gemfile
 
-###DB setup:
+### DB setup:
 - Set up postgres on your machine. [Here](https://www.tunnelsup.com/setting-up-postgres-on-mac-osx/) is a guide for osx. Linux and it's flavours are a bit different, the instructions can be found online easily.
 - `rake db:create:all` creates a database for all env's.
 
@@ -38,7 +38,7 @@ Run `rake db:migrate` To run migrations and update the database with the current
 Finally run `bin/rails server` or simply `rails s` to start up the server.
 
 
-#The Politican Scorecard
+# The Politican Scorecard
 
 Initial Requirements for Minimum Viable Product:
 
@@ -46,7 +46,7 @@ Objectives:
 
 We can create a grading profile for each politician similar to the NRA's gun friendly grading site: https://www.nrapvf.org/grades/. We should probably then display the grade with what factors determined that grade, similar to a skillset(Example: Renewable Energy[50], Recycling[20]). Politicians can also be certified through sponsors such as the Rainforest Alliance. Relationships should be displayed such as Company A donated 50,000 to Senator Doe.
 
-##Present Climate Change opinion/status of the following:
+## Present Climate Change opinion/status of the following:
 
 Big Political figures:
 
@@ -65,7 +65,7 @@ Big Political figures:
 * Campaign Donations
 
 
-##Key features:
+## Key features:
 1. Website:
    * Robust, relational database for storing numerous entries on various topics.
    * Simple but powerful user search function.
